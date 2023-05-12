@@ -1,0 +1,53 @@
+.promo-component {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 24px;
+  padding: 0 32px;
+  background: linear-gradient(90.79deg, #d12f26 -8.89%, #181818 100%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  width: 100%;
+  max-width: 1088px;
+  height: 128px;
+
+  & &__gradient {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 632px;
+    width: 100%;
+    max-height: 128px;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(90deg, #822e21 0%, rgba(130, 46, 33, 0) 100%);
+  }
+
+  & &__img-container {
+    position: absolute;
+    z-index: 1;
+    max-height: 128px;
+    max-width: 632px;
+    right: 0;
+    top: 0;
+    img {
+      object-fit: cover;
+    }
+  }
+
+  & &__text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: var(--white);
+    max-width: 250px;
+  }
+
+  button.show-section__card-button {
+    position: absolute;
+    right: 32px;
+    z-index: 3;
+    max-width: 205px;
+  }
+}

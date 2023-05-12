@@ -1,0 +1,15 @@
+/// Root Styles file
+/// Here we define all the root variables we need for our project.
+/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --gray-border: #3c3c3c;
+    --gray-bg: #1A1A1A;
+    --gray-text: #8D8D8D;
+    --button-color-bg-hover: #F0F0F0;
+    --button-color-bg-active: #D1D1D1;
+
+    --font-family: font-family: 'Space Grotesk', sans-serif;
+}

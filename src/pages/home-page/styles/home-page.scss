@@ -1,0 +1,117 @@
+@import "/src/pages/home-page/styles/promo-component.scss";
+
+body {
+  background-color: var(--black);
+}
+
+#home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-section {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-family);
+  gap: 24px;
+  margin: 20px;
+
+  & &__main {
+    display: flex;
+    max-width: 1136px;
+    border-radius: 32px;
+    border: 1px solid var(--gray-border);
+    padding: 24px;
+    gap: 16px;
+  }
+
+  & &__card {
+    max-width: 352px;
+    background-color: var(--gray-bg);
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  & &__card-head {
+    position: relative;
+  }
+
+  & &__show-logo {
+    position: absolute;
+    bottom: 0;
+    max-width: 108px;
+    margin: 24px;
+  }
+
+  & &__img-gradient {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 88px;
+    background: linear-gradient(180deg, #191919 0%, rgba(25, 25, 25, 0) 100%);
+    transform: rotate(-180deg);
+  }
+
+  & &__card-main {
+    padding: 16px 24px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 34px;
+  }
+
+  & &__show-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  & &__show-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: var(--white);
+  }
+
+  & &__show-details {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: var(--gray-text);
+  }
+
+  & &__card-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 154px;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+
+    img {
+      max-width: 10px;
+    }
+
+    .button-text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  & &__card-button:hover {
+    background-color: var(--button-color-bg-hover);
+  }
+
+  & &__card-button:active {
+    background-color: var(--button-color-bg-active);
+  }
+}
