@@ -32,8 +32,6 @@ body {
     justify-content: space-between;
     max-width: 352px;
     width: 100%;
-    height: 100%;
-    max-height: 422px;
     background-color: var(--gray-bg);
     border-radius: 24px;
     overflow: hidden;
@@ -41,10 +39,15 @@ body {
 
   & &__card-head {
     position: relative;
+    height: 17vw;
   }
 
   & &__card-img-container {
-    max-height: 172px;
+    height: 100%;
+
+    img{
+      object-fit: cover;
+    }
   }
 
   & &__show-logo {
@@ -75,7 +78,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    height: 130px;
   }
 
   & &__show-title {
@@ -141,8 +143,8 @@ body {
     }
 
     & &__card {
+      flex-direction: row;
       max-width: 722px;
-      max-height: 228px;
     }
 
     & &__card-main {
@@ -150,17 +152,13 @@ body {
       gap: 16px;
     }
 
-    & &__card-filling {
-      display: flex;
+    & &__card-head {
+      height: 100%;
+      width: 27vh;
     }
 
     & &__card-img-container {
-      flex-shrink: 0;
-      max-width: 210px;
-      height: 100%;
-      max-height: 228px;
       img {
-        object-fit: cover;
         object-position: -55px;
       }
     }
@@ -191,19 +189,16 @@ body {
     }
 
     & &__card {
-      max-height: 340px;
+      flex-direction: column;
       border-radius: 16px;
     }
 
-    & &__card-filling {
-      flex-direction: column;
+    & &__card-head {
+      width: 100%;
+      height: 29vw;
     }
 
     & &__card-img-container {
-      
-      max-width: 100%;
-      width: 100%;
-      max-height: 144px;
       img {
         object-position: center;
       }
